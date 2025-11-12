@@ -16,7 +16,7 @@ while true do
 
 		local Success
 		Success, Function = pcall(function()
-			return loadstring(game:HttpGet(`https://github.com/alyssagithub/gold/raw/main/Games/{PlaceFileName}.luau`))
+			return loadstring(game:HttpGet(`https://github.com/alyssagithub/gold/raw/main/Scripts/{PlaceFileName}.luau`))
 		end)
 		
 		if not Success then
