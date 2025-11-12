@@ -1,1 +1,1 @@
-print("test initiate")
+print("test initiate", math.random())
