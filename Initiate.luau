@@ -25,7 +25,7 @@ if not Function then
 end
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "gold™ (discord.gg/sS3tDP6FSB)",
+	Title = "gold (discord.gg/sS3tDP6FSB)",
 	Text = NotificationMessage or "game found, loading script...",
 	Duration = 10
 })
@@ -34,7 +34,7 @@ local Success, Result = pcall(Function)
 
 if not Success then
 	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "gold™ errored",
+		Title = "gold errored",
 		Text = Result,
 		Duration = 10
 	})
