@@ -31,6 +31,8 @@ while true do
 		
 		if shared.Testing then
 			Function = GetFromLink(`https://github.com/alyssagithub/gold/raw/main/TestingScripts/{PlaceFileName}.luau`)
+			
+			shared.Core = GetFromLink("https://github.com/alyssagithub/gold/raw/main/TestingScripts/TestingCore.luau")
 		end
 		
 		if not Function then
