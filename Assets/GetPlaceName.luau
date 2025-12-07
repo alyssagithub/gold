@@ -33,7 +33,7 @@ while true do
 		if shared.Testing then
 			Function = GetFromLink(`https://github.com/alyssagithub/gold/raw/main/TestingScripts/{PlaceFileName}.luau`)
 			
-			local _, _, HttpResult = GetFromLink("https://github.com/alyssagithub/gold/raw/main/TestingScripts/TestingCore.luau")
+			local _, _, HttpResult = GetFromLink("https://github.com/alyssagithub/gold/raw/main/Testing/Core.luau")
 			
 			shared.Core = HttpResult
 		end
