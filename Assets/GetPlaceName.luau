@@ -17,7 +17,7 @@ while true do
 	for _, PlaceInfo: {Name: string, PlaceId: number} in GamePlaces:GetCurrentPage() do
 		SetPlace(PlaceInfo.Name)
 		
-		local function GetFromLink(Link: string): (boolean?, () -> ()?, string?)
+		local function GetFromLink(Link: string): (() -> ()?, string?)
 			local Success, Result, HttpResult = pcall(function()
 				local HttpResult = game:HttpGet(Link)
 				return loadstring(HttpResult) :: any, HttpResult :: any
@@ -33,7 +33,7 @@ while true do
 		if shared.Testing then
 			Function = GetFromLink(`https://github.com/alyssagithub/gold/raw/main/TestingScripts/{PlaceFileName}.luau`)
 			
-			local _, _, HttpResult = GetFromLink("https://github.com/alyssagithub/gold/raw/main/Testing/Core.luau")
+			local _, HttpResult = GetFromLink("https://github.com/alyssagithub/gold/raw/main/Testing/Core.luau")
 			
 			shared.Core = HttpResult
 		end
