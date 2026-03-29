@@ -85,7 +85,7 @@ end
 local Function = PlaceInfo.Function
 
 if not Function then
-	Function = loadstring(game:HttpGet("https://github.com/alyssagithub/gold/raw/main/Scripts/Universal.luau"))
+	Function = loadstring(game:HttpGet(`https://github.com/alyssagithub/gold/raw/{shared.Branch or "main"}/Scripts/Universal.luau`))
 	NotificationMessage = "game not found, loading universal script..."
 end
 
