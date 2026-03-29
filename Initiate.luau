@@ -1,4 +1,5 @@
 --!strict
+-- set shared.Branch = "branchname" for testing
 
 -- Constants
 local OnlyGetPlaceName: boolean? = ...
@@ -54,7 +55,7 @@ do
 			end
 
 			if not Function then
-				Function = GetFromLink(`https://github.com/alyssagithub/gold/raw/main/Scripts/{PlaceFileName}.luau`)
+				Function = GetFromLink(`https://github.com/alyssagithub/gold/raw/{shared.Branch or "main"}/Scripts/{PlaceFileName}.luau`)
 			end
 
 			if Function then
